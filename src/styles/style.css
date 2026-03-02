@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "PTSans";
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-family: "CormorantInfant";
+  src: url("/fonts/CormorantInfant-VariableFont_wght.ttf") format("ttf");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PTSans";
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
-  font-style: normal;
+  font-family: "CormorantInfant-Italic";
+  src: url("/fonts/CormorantInfant-Italic-VariableFont_wght.ttf") format("ttf");
+  font-style: italic;
   font-weight: 700;
   font-display: swap;
 }
@@ -24,16 +24,16 @@
   --third-font-color: rgba(240, 126, 2, 1);
   --error: rgba(255, 87, 87, 1);
 
+}
 
-  *:focus-visible {
-    outline: 2px solid transparent;
-    outline-offset: -2px;
-  }
+*:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+}
 
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 /* Глобальные слили, а также универсальные обертки для модулей */
@@ -57,7 +57,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: var(--page_background);
-  font-family: "PTSans", system-ui, "Arial", sans-serif;
+  font-family: "CormorantInfant", "Palatino Linotype", Palatino, Georgia, serif;
 }
 
 .page {
@@ -252,29 +252,34 @@ body {
   position: relative;
 }
 
+.header__nav {
+  max-width: 80%;
+  align-items: center;
+  margin: auto 0;
+}
+
 .header__nav-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  max-width: 70%;
   margin-left: 30px;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .header__nav-item {
+  flex: 1 1 auto;
   font-weight: 700;
-  padding: 19px 16px;
-  padding-bottom: 18px;
-  border-bottom: 2px solid transparent;
-  border: 2px solid white;
+  min-width: 120px;
 }
 
 .header__nav-link {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-size: 20px;
   line-height: 24px;
-  padding: 17px 0;
-  color: var();
+  padding: 17px 15px;
+  color: var(--second-font-color);
 }
 
 .header__nav-link:active {
@@ -323,12 +328,10 @@ body {
   align-items: center;
   padding: 0 auto;
   max-width: 100%;
-  background-color: var(--third_background-color);
 }
 
 .hero__image-wrapper {
   width: 1200px;
-  min-height: 485px;
   background-color: var(--first-font-color__opacity3);
   margin: 0;
   background-image: url("");

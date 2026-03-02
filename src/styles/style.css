@@ -1,14 +1,14 @@
 @font-face {
   font-family: "CormorantInfant";
-  src: url("/fonts/CormorantInfant-VariableFont_wght.ttf") format("ttf");
+  src: url("/fonts/CormorantInfant-VariableFont_wght.ttf") format("woff2");
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: "CormorantInfant-Italic";
-  src: url("/fonts/CormorantInfant-Italic-VariableFont_wght.ttf") format("ttf");
+  src: url("/fonts/CormorantInfant-Italic-VariableFont_wght.ttf") format("woff2");
   font-style: italic;
   font-weight: 700;
   font-display: swap;

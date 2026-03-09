@@ -5,18 +5,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="">
-  <meta name="description" content="О нас — студия оформления мероприятий Трио Декор" />
-  <title>Услуги</title>
+  <meta name="description" content="" />
+  <title>Магазин декора — ТриоДЕКОР</title>
+  <link rel="canonical" href="#">
   <link rel="icon" type="image/svg+xml" href="#" />
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="icon" type="image/x-icon" sizes="16x16" href="#">
 </head>
 
-<body class="page">
+<body class="page ">
   <header class="header">
     <a class="header__logo" href="../../index.html">
       <img class="header__logo-image" src="../../img/Logo-dark.png" alt=" Логотип ТриоДЕКОР" width="140" height="70">
     </a>
+
+
+    <input type="checkbox" id="menu-toggle" class="header__toggle visually-hidden">
+
+    <label for="menu-toggle" class="header__burger" aria-label="Открыть меню">
+      <span class="header__burger-line line--top"></span>
+      <span class="header__burger-line line--middle"></span>
+      <span class="header__burger-line line--bottom"></span>
+    </label>
 
     <nav class="header__nav">
       <ul class="header__nav-list">
@@ -24,7 +34,29 @@
           <a href="../../index.html" class="header__nav-link">О нас</a>
         </li>
         <li class="header__nav-item header__nav-link--current">
-          <a href="services.html" class="header__nav-link">Услуги</a>
+          <details class="header__dropdown">
+            <summary class="header__nav-link">
+              Услуги
+            </summary>
+
+            <ul class="header__submenu">
+              <li class="header__submenu-item ">
+                <a href="wedding-page.html">Организация свадеб</a>
+              </li>
+              <li class="header__submenu-item ">
+                <a href="birthday-corporate-page.html">Организация дней рождения и корпоративов</a>
+              </li>
+              <li class="header__submenu-item ">
+                <a href="holidays-events-page.html">Организация праздников и мероприятий</a>
+              </li>
+              <li class="header__submenu-item header__submenu-item--current">
+                <a href="#">Продажа и аренда декора</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="print-page.html">Широкоформатная печать на ткани</a>
+              </li>
+            </ul>
+          </details>
         </li>
         <li class="header__nav-item">
           <a href="portfolio.html" class="header__nav-link">Портфолио</a>
@@ -32,7 +64,7 @@
         <li class="header__nav-item">
           <a href="awards.html" class="header__nav-link">Наши успехи</a>
         </li>
-        <li class="header__nav-item">
+        <li class="header__nav-item header__nav-link--current">
           <a href="contacts.html" class="header__nav-link">Контакты</a>
         </li>
       </ul>
@@ -40,31 +72,9 @@
 
   </header>
 
-  <main class="main">
-    <h1>Что мы предлагаем?</h1>
-    <ul>
-      <li>Свадебный деĸор: разработĸа униĸальной ĸонцепции свадьбы, отражение истории любви молодоженов, создание
-        индивидуальных эсĸизов.</li>
-      <li>Организация детсĸих мероприятий «под ĸлюч»: создание фотозоны, оформление пространства и увлеĸательная
-        анимационная программа</li>
-      <li>Эĸсĸлюзивные фотозоны: специальные зоны для фотосессий, создающие неповторимую атмосферу.</li>
-      <li>Воздушные шары: от ĸлассичесĸих гелевых шариĸов до эĸсĸлюзивных ĸомпозиций
-        ручной работы</li>
-      <li>Цветочные ĸомпозиции: свежие буĸеты, флористиĸа и униĸальная растительность уĸрасят ваш интерьер</li>
-      <li>Интерьерное оформление: витрины, входные группы, банĸетные залы и жилые помещения преобразуются с нашей
-        помощью.
-      </li>
-      <li>Новогодний деĸор: ĸреативные фотозоны, авторсĸие уĸрашения и натуральная хвоя создают атмосферу волшебства.
-      </li>
-      <li>Бутафория: ультрамодные аĸсессуары, вĸлючая гигантсĸие цветы, флаги и деĸоративные предметы.</li>
-      <li>Производство печати на тĸани: создаем униĸальные изделия специально для вашего
-        мероприятия.</li>
-    </ul>
-
-    <section>
-      <p>Подходящие случаи: свадьба, юбилей, день рождения, вечеринĸа, ĸорпоратив и многое
-        другое.</p>
-    </section>
+  <main class="page--store">
+    <h1>продажа и аренда декора</h1>
+    <p>тут будет магазин</p>
   </main>
 
   <footer class="footer">
@@ -133,12 +143,11 @@
 
     <div class="footer__site">
       <span class="visually-hidden">Cайт разработан:</span>
-      <a class="footer__site-link" href="#" aria-label="ссылка на сайт разработчика htmlacademy">
+      <a class="footer__site-link" href="#" aria-label="ссылка на сайт разработчика">
 
       </a>
     </div>
   </footer>
-
 </body>
 
 </html>

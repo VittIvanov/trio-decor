@@ -1,0 +1,154 @@
+/* стили для footer */
+
+.footer {
+  padding: 45px 70px 35px 70px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  background-color: var(--first_background-color);
+}
+
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 250px;
+}
+
+.footer__social-item {
+  border: 2px solid var(--third_background-color);
+  border-radius: 50%;
+}
+
+.footer__social-link {
+  width: 33px;
+}
+
+
+.footer__phone {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 350px;
+}
+
+.footer__ {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 150px;
+}
+
+.footer__social-link,
+.footer__phone-link,
+.footer__-link {
+  color: var(--second-font-color);
+  font-size: 35px;
+  line-height: 35px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+}
+
+.footer__social-link:focus-visible,
+.footer__phone-link:focus-visible,
+.footer__-link:focus-visible {
+  outline: 2px solid transparent;
+}
+
+.footer__social-link:focus-within,
+.footer__phone-link:focus-within,
+.footer__-link:focus-within {
+  .footer__social-image {
+    path {
+      fill: var(--button__second-color_active);
+    }
+  }
+}
+
+.footer__phone-link:active,
+.footer__-link:active {
+  opacity: 0.6;
+}
+
+.footer__social-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  fill: var(--third-font-color);
+  box-sizing: border-box;
+}
+
+.social-image__vk {
+  width: 25px;
+  height: 14px;
+}
+
+.social-image__telegram {
+  width: 18px;
+  height: 16px;
+}
+
+.social-image__instagram {
+  width: 22px;
+  height: 24px;
+}
+
+.social-image__vk,
+.social-image__telegram,
+.social-image__instagram {
+  path {
+    fill: var(--button__second-color);
+  }
+}
+
+.social-image__vk:hover,
+.social-image__telegram:hover,
+.social-image__instagram:hover {
+  path {
+    fill: var(--button__second-color_active);
+  }
+}
+
+.social-image__vk:active,
+.social-image__telegram:active,
+.social-image__instagram:active {
+  path {
+    fill: var(--button__second-color_active);
+    opacity: 0.3;
+    transition: opacity 0.1s ease
+  }
+}
+
+.footer__phone-link:hover,
+.footer__phone-link:focus-visible {
+  color: var(--button__first-color);
+}
+
+.footer__phone-link:active {
+  color: var(--button__first-color);
+  opacity: 0.3;
+  transition: opacity 0.1s ease;
+}
+
+.footer__-link {
+  width: 115px;
+  height: 40px;
+}
+
+.footer__-link:hover,
+.footer__-link:focus-visible {
+  path {
+    fill: var(--button__first-color);
+  }
+}
+
+.footer__-link:active {
+  path {
+    fill: var(--button__first-color);
+    opacity: 0.3;
+    transition: opacity 0.1s ease;
+  }
+}

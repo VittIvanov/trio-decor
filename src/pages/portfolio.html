@@ -7,27 +7,58 @@
   <meta name="keywords" content="">
   <meta name="description" content="Примеры оформления мероприятий — портфолио Трио Декор" />
   <title>Наши работы / Портфолио</title>
+  <link rel="canonical" href="#">
   <link rel="icon" type="image/svg+xml" href="#" />
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="icon" type="image/x-icon" sizes="16x16" href="#">
 </head>
 
-<body class="page">
+<body class="page ">
   <header class="header">
     <a class="header__logo" href="../../index.html">
       <img class="header__logo-image" src="../../img/Logo-dark.png" alt=" Логотип ТриоДЕКОР" width="140" height="70">
     </a>
+
+    <input type="checkbox" id="menu-toggle" class="header__toggle visually-hidden">
+
+    <label for="menu-toggle" class="header__burger" aria-label="Открыть меню">
+      <span class="header__burger-line line--top"></span>
+      <span class="header__burger-line line--middle"></span>
+      <span class="header__burger-line line--bottom"></span>
+    </label>
 
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item">
           <a href="../../index.html" class="header__nav-link">О нас</a>
         </li>
-        <li class="header__nav-item header__nav-link--current">
-          <a href="services.html" class="header__nav-link">Услуги</a>
+        <li class="header__nav-item ">
+          <details class="header__dropdown">
+            <summary class="header__nav-link">
+              Услуги
+            </summary>
+
+            <ul class="header__submenu">
+              <li class="header__submenu-item ">
+                <a href="wedding-page.html">Организация свадеб</a>
+              </li>
+              <li class="header__submenu-item ">
+                <a href="birthday-corporate-page.html">Организация дней рождения и корпоративов</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="holidays-events-page.html">Организация праздников и мероприятий</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="decor-store-page.html">Продажа и аренда декора</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="print-page.html">Широкоформатная печать на ткани</a>
+              </li>
+            </ul>
+          </details>
         </li>
-        <li class="header__nav-item">
-          <a href="portfolio.html" class="header__nav-link">Портфолио</a>
+        <li class="header__nav-item header__nav-link--current">
+          <a href="#" class="header__nav-link">Портфолио</a>
         </li>
         <li class="header__nav-item">
           <a href="awards.html" class="header__nav-link">Наши успехи</a>
@@ -40,7 +71,7 @@
 
   </header>
 
-  <main>
+  <main class="main page--portfolio">
     <section>
       <h1>Наши работы</h1>
     </section>
@@ -112,7 +143,7 @@
 
     <div class="footer__site">
       <span class="visually-hidden">Cайт разработан:</span>
-      <a class="footer__site-link" href="#" aria-label="ссылка на сайт разработчика htmlacademy">
+      <a class="footer__site-link" href="#" aria-label="ссылка на сайт разработчика">
 
       </a>
     </div>

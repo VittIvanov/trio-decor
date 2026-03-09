@@ -1,0 +1,108 @@
+.title {
+  font-family: inherit;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-weight: 400;
+  color: var(--fourth-font-color);
+}
+
+.button {
+  padding: 8px 50px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--third-font-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(50, 50, 50, 0.25);
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+}
+
+.button:disabled {
+  color: var(--first-font-color);
+  background-color: var(--second_background-color);
+  cursor: default;
+}
+
+
+
+
+.order-form {
+  background-color: var(--page_background);
+  color: var(--third-font-color);
+  border-top: 2px solid var(--first-font-color);
+  padding-block: 50px;
+  margin-top: auto;
+}
+
+.order-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-form__button {
+  padding: 10px 50px;
+  border-radius: 5px;
+  background-color: var(--button__background-color);
+  color: var(--second-font-color);
+}
+
+.order-form__description-text {
+  color: var(--first-font-color);
+}
+
+.order-form__input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--input__background-color);
+  color: var(--first-font-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+
+
+/* стили для modal */
+
+
+.modal-form__overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--first__background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-form__hidden {
+  display: none;
+}
+
+.modal-form {
+  position: relative;
+  width: 100%;
+  max-width: 717px;
+  padding: 64px 70px;
+  font-family: inherit;
+  margin: 0 auto;
+  background-color: var(--first_background-color);
+  border-radius: 30px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  box-sizing: border-box;
+}

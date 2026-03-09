@@ -1,0 +1,72 @@
+/* стили для main Главной страницы */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  margin: 0 auto;
+  background-color: var(--first_background-light-color);
+  background-size: cover;
+  color: var(--second-font-color);
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 450px;
+  padding-inline: 70px;
+  background-color: var(--first_background-color);
+  background-image: url("../../img/boukette.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.hero__slogan {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: flex-start;
+  max-width: 600px;
+  padding: 20px;
+  margin-bottom: 5%;
+  margin-top: auto;
+}
+
+.hero__slogan-title {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.hero__slogan-text {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+.about {
+  background-color: var(--first_background-color);
+  color: var(--second-font-color)
+}
+
+.advantages {
+  background-color: var(--second_background-color);
+  color: var(--first-font-color)
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+/* для ноутбуков */
+@media (min-width: 1024px) {
+  .main {
+    width: 95%;
+  }
+}

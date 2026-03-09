@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "CormorantInfant";
+  src: url("../../fonts/CormorantInfant-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CormorantInfant-Italic";
+  src: url("../../fonts/CormorantInfant-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --page_background: rgba(255, 255, 255, 1);
+  --first_background-color: rgba(70, 70, 72, 1);
+  --first_background-light-color: rgb(181, 180, 180);
+  --second_background-color: rgba(255, 255, 255, 1);
+  --third_background-color: rgba(240, 126, 2, 1);
+  --first-font-color: rgba(57, 57, 59, 1);
+  --second-font-color: rgba(255, 255, 255, 1);
+  --third-font-color: rgba(240, 126, 2, 1);
+  --input__background-color: rgb(246, 217, 183);
+  --button__background-color: rgba(240, 126, 2, 1);
+  --button__background-color--hover: rgba(240, 126, 2, 0.7);
+  --third-border-color: rgba(240, 126, 2, 1);
+  --error: rgba(255, 87, 87, 1);
+
+}

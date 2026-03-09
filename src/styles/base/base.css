@@ -1,0 +1,87 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: var(--second_background-color);
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(50, 50, 50, 0.25);
+}
+
+
+.page h1 {
+  font-size: 55px;
+  line-height: 78px;
+  margin: 0;
+}
+
+.page h2 {
+  font-size: 28px;
+  line-height: 34px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.page h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.page h4 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+
+.page input {
+  appearance: none;
+  -webkit-appearance: none
+}
+
+.page figure {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 70px;
+  padding-block: 20px;
+}
+
+:where(.page) ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration-color: inherit;
+}
+
+:where(.page) :where(button, input) {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+:where(.page) img {
+  box-sizing: border-box;
+  vertical-align: middle;
+}

@@ -217,10 +217,6 @@
     box-shadow: none;
   }
 
-  .header__nav-link {
-    font-size: 24px;
-    line-height: 32px;
-  }
 
   .header__submenu {
     position: absolute;
@@ -237,9 +233,6 @@
   }
 
   .header__submenu-item a {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
     border: none;
   }
 
@@ -247,4 +240,21 @@
     font-size: 30px;
     line-height: 36px;
   }
+}
+
+/* для планшетов */
+@media (min-width: 1280px) {
+
+  .header__nav-link {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .header__submenu-item a {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    border: none;
+  }
+
 }

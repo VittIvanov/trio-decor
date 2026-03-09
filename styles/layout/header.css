@@ -119,8 +119,8 @@
   line-height: 24px;
   padding: 17px 15px;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 48px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .header__burger {
@@ -187,8 +187,8 @@
   transition: background-color 0.3s ease;
 
   font-weight: 700;
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /* для планшетов */
@@ -208,8 +208,8 @@
   }
 
   .header__nav-link {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .header__toggle:checked~.header__nav {
@@ -239,8 +239,8 @@
 
   .header__submenu-item a {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 22px;
     border: none;
   }
 

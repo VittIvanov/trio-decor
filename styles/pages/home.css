@@ -14,7 +14,6 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  /* min-height: 450px; */
   padding-inline: 10px;
   background-color: var(--first_background-color);
   background-image: url("../../img/boukette.jpg");
@@ -37,15 +36,9 @@
   margin-top: auto;
 }
 
-.hero__slogan-title {
-  font-size: 0.9rem;
-  line-height: 1.2rem;
-}
+.hero__slogan-title {}
 
-.hero__slogan-text {
-  font-size: 1.3rem;
-  line-height: 1.5rem;
-}
+.hero__slogan-text {}
 
 .about {
   background-color: var(--first_background-color);

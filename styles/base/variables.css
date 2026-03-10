@@ -1,32 +1,99 @@
-@font-face {
-  font-family: "CormorantInfant";
-  src: url("../../fonts/CormorantInfant-VariableFont_wght.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "CormorantInfant-Italic";
-  src: url("../../fonts/CormorantInfant-Italic-VariableFont_wght.ttf") format("truetype");
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-}
-
 :root {
   --page_background: rgba(255, 255, 255, 1);
-  --first_background-color: rgba(70, 70, 72, 1);
-  --first_background-light-color: rgb(181, 180, 180);
+  --first_background-color: rgba(211, 212, 212, 1);
+  --first_background-color-opacity3: rgba(44, 44, 44, 0.3);
+  --first_background-light-color: rgb(222, 218, 218);
   --second_background-color: rgba(255, 255, 255, 1);
   --third_background-color: rgba(240, 126, 2, 1);
   --first-font-color: rgba(57, 57, 59, 1);
   --second-font-color: rgba(255, 255, 255, 1);
-  --third-font-color: rgba(240, 126, 2, 1);
+  --fourth-font-color: rgba(240, 126, 2, 1);
+  --third-font-color: rgba(44, 44, 44, 1);
   --input__background-color: rgb(246, 217, 183);
   --button__background-color: rgba(240, 126, 2, 1);
   --button__background-color--hover: rgba(240, 126, 2, 0.7);
   --third-border-color: rgba(240, 126, 2, 1);
   --error: rgba(255, 87, 87, 1);
+  /* ===== FONTS ===== */
 
+  --font-main: "Inter", Arial, sans-serif;
+  --font-title: "Noto Serif Display", Georgia, serif;
+  --font-ui: "Roboto", Arial, sans-serif;
+  --font-accent: "Raleway", sans-serif;
+
+
+  /* ===== LAYOUT ===== */
+
+  --container-width: 1200px;
+  --container-padding: 15px;
+
+
+  /* ===== TRANSITIONS ===== */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.4s ease;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../../fonts/raleway-v37-cyrillic_latin-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../../fonts/raleway-v37-cyrillic_latin-italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Serif Display";
+  src: url("../../fonts/NotoSerifDisplay-VariableFont_wdth,wght.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Serif Display";
+  src: url("../../fonts/NotoSerifDisplay-Italic-VariableFont_wdth,wght.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Italic-VariableFont_opsz,wght.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-VariableFont_wdth,wght.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Italic-VariableFont_wdth,wght.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
 }

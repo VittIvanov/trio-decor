@@ -1,11 +1,21 @@
 /* стили для footer */
 
 .footer {
-  padding: 45px 70px 35px 70px;
+  padding: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: auto;
-  background-color: var(--first_background-color);
+  background: linear-gradient(45deg,
+      #d7d7d7,
+      #f0f0f0,
+      #cfcfcf,
+      #f5f5f5,
+      #d7d7d7);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 .footer__social {
@@ -41,7 +51,7 @@
 .footer__phone-link,
 .footer__-link {
   color: var(--second-font-color);
-  font-size: 35px;
+  font-size: 30px;
   line-height: 35px;
   height: 33px;
   display: flex;

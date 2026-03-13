@@ -15,7 +15,7 @@
   display: flex;
   align-items: flex-end;
   padding-inline: 10px;
-  background-color: var(--first_background-color);
+  background-color: var(--second_background-color);
   background-image: url("../../img/boukette.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@
   flex-wrap: wrap;
   gap: 40px;
   text-align: flex-start;
-  min-width: 320px;
+  min-width: 300px;
   max-width: 600px;
   padding: 20px;
   margin-bottom: 5%;
@@ -41,13 +41,15 @@
 .hero__slogan-text {}
 
 .about {
-  background-color: var(--first_background-color);
+  background-color: var(--second_background-color);
   color: var(--second-font-color)
 }
 
+
 .advantages {
   background-color: var(--second_background-color);
-  color: var(--first-font-color)
+  color: var(--second-font-color);
+  padding-block: 10px;
 }
 
 .advantages__list {
@@ -55,8 +57,92 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height var(--transiton-slow) cubic-bezier(.4, 0, .2, 1);
 }
 
+.advantages__item {
+
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition:
+    opacity var(--transiton-normal),
+    transform var(--transiton-normal);
+}
+
+.advantages__title {
+  font-size: 26px;
+  padding-left: 10px;
+  color: var(--fourth-font-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+  background: none;
+
+}
+
+.advantages.active .advantages__list {
+
+  max-height: 600px;
+
+}
+
+.advantages.active .advantages__item {
+
+  opacity: 1;
+  transform: translateY(0);
+
+}
+
+.advantages.active .advantages__item:nth-child(1) {
+  transition-delay: .05s;
+}
+
+.advantages.active .advantages__item:nth-child(2) {
+  transition-delay: .15s;
+}
+
+.advantages.active .advantages__item:nth-child(3) {
+  transition-delay: .25s;
+}
+
+.advantages.active .advantages__item:nth-child(4) {
+  transition-delay: .35s;
+}
+
+.advantages__arrow {
+
+  width: 10px;
+  height: 10px;
+
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+
+  transform: rotate(45deg);
+
+  transition: transform var(--transiton-normal);
+}
+
+.advantages.active .advantages__arrow {
+  transform: rotate(-135deg);
+}
+
+.advantages__item-title {
+  font-size: 20px;
+  color: var(--fifth-font-color);
+  margin: 0 0 10px 10px;
+}
+
+.advantages__item-text {
+  margin: 0 15px;
+}
 
 /* для ноутбуков */
 @media (min-width: 1024px) {

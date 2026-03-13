@@ -30,38 +30,55 @@
 }
 
 .order-form {
-  /* background-color: var(--page_background);
-  color: var(--third-font-color);
-  border-top: 2px solid var(--first-font-color);
-  padding-block: 10px;
-  margin-top: auto; */
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  background: linear-gradient(-45deg,
+      #a8a8a4,
+      #837658);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.order-form__description {
+  padding: 10px;
+  color: var(--second-font-color);
+}
+
+.order-form__description-title {
+  padding-left: 10px;
+  color: var(--second-font-color);
 }
 
 .order-form__form {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  gap: 20px; */
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .order-form__button {
-  /* padding: 10px;
-  border-radius: 5px;
-  background-color: var(--button__background-color);
-  color: var(--second-font-color); */
+  color: var(--second-font-color);
+
+  background: linear-gradient(-45deg,
+      rgba(230, 221, 142, 1),
+      rgba(193, 161, 86, 1),
+      rgba(203, 184, 75, 1),
+      rgba(159, 137, 72, 1),
+      rgb(240, 199, 110, 1));
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.order-form__description-text {
-  /* color: var(--first-font-color); */
-}
+
 
 .order-form__input {
-  /* padding: 10px;
+  padding: 10px;
   border-radius: 5px;
   background-color: var(--input__background-color);
   color: var(--first-font-color);
   font-weight: 700;
   font-size: 20px;
-  line-height: 24px; */
+  line-height: 24px;
 }
 
 /* стили для modal */

@@ -75,7 +75,7 @@
 }
 
 .advantages__title {
-  font-size: 26px;
+  font-size: 24px;
   padding-left: 10px;
   color: var(--fourth-font-color);
   display: flex;
@@ -89,9 +89,7 @@
 }
 
 .advantages.active .advantages__list {
-
-  max-height: 600px;
-
+  max-height: 700px;
 }
 
 .advantages.active .advantages__item {

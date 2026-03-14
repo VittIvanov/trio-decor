@@ -36,10 +36,6 @@
   margin-top: auto;
 }
 
-.hero__slogan-title {}
-
-.hero__slogan-text {}
-
 .about {
   background-color: var(--second_background-color);
   color: var(--second-font-color)
@@ -47,6 +43,7 @@
 
 
 .advantages {
+  display: block;
   background-color: var(--second_background-color);
   color: var(--second-font-color);
   padding-block: 10px;
@@ -72,6 +69,11 @@
   transition:
     opacity var(--transiton-normal),
     transform var(--transiton-normal);
+}
+
+.advantages__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 8px 0;
 }
 
 .advantages__title {

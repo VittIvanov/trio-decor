@@ -2,7 +2,8 @@
   --page_background: rgba(255, 255, 255, 1);
   --first_background-color: rgba(211, 212, 212, 1);
   --first_background-color-opacity3: rgba(44, 44, 44, 0.3);
-  --first_background-light-color: rgb(222, 218, 218);
+  --first_background-light-color: rgba(222, 218, 218, 1);
+  --first_background-light-color-opacity6: rgba(126, 158, 158, 0.6);
   --second_background-color: rgba(70, 70, 72, 1);
   --third_background-color: rgba(240, 126, 2, 1);
   --first-font-color: rgba(57, 57, 59, 1);
@@ -15,6 +16,17 @@
   --button__background-color--hover: rgba(240, 126, 2, 0.7);
   --third-border-color: rgba(240, 126, 2, 1);
   --error: rgba(255, 87, 87, 1);
+
+  --silver__background: linear-gradient(90deg,
+      #d7d7d7,
+      #f0f0f0,
+      #cfcfcf,
+      #f5f5f5,
+      #d7d7d7);
+  ;
+  /* shadow */
+  --box-shadow: 0px 5px 10px 0px var(--first_background-color-opacity3);
+
   /* ===== FONTS ===== */
 
   --font-main: "Inter", Arial, sans-serif;
@@ -34,6 +46,26 @@
   --transition-fast: 0.2s ease;
   --transition-normal: 0.4s ease;
   --transition-slow: 0.6s;
+}
+
+
+@media (min-width:768px) {
+  :root {
+    --container-padding: 24px;
+  }
+}
+
+@media (min-width:1024px) {
+  :root {
+    --container-padding: 32px;
+  }
+}
+
+@media (min-width:1280px) {
+  :root {
+    --container-padding: 46px;
+    --container-width: 1900px;
+  }
 }
 
 @font-face {

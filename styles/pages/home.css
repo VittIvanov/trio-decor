@@ -67,9 +67,21 @@
 
 
 .advantages {
-  background-color: var(--first_background-color-opacity6);
+  background-color: var(--first_background-color-opacity3);
   color: var(--second-font-color);
   padding-block: 10px;
+  border: 2px solid var(--third_background-color);
+  border-radius: 5% 2% 5% 2%;
+  background-color: var(--first_background-color-opacity6);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+.advantages:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .advantages__list {
@@ -102,7 +114,7 @@
 .advantages__title {
   font-size: 24px;
   padding-left: 10px;
-  color: var(--fourth-font-color);
+  color: var(--first-font-color);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -161,15 +173,30 @@
   font-size: 20px;
   color: var(--fifth-font-color);
   margin: 0 0 10px 10px;
+
 }
 
 .advantages__item-text {
   margin: 0 15px;
 }
 
+.info-block {
+  display: none;
+}
+
 /* для ноутбуков */
 @media (min-width: 1024px) {
   .main {
     width: 95%;
+  }
+
+  .info-block {
+    display: block;
+    max-width: 550px;
+    height: max-content;
+    margin: 0 10px;
+    background-color: var(--first_background-color-opacity6);
+    color: var(--second-font-color);
+    padding: 10px;
   }
 }

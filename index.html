@@ -50,11 +50,11 @@
       <nav class="header__nav" aria-label="Основная навигация">
         <ul class="header__nav-list">
           <li class="header__nav-item header__nav-link--current">
-            <a href="#" class="header__nav-link button">О нас</a>
+            <a href="#" class="header__nav-link">О нас</a>
           </li>
 
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link button">готовые решения </a>
+            <a href="#" class="header__nav-link">готовые решения </a>
           </li>
           <li class="header__nav-item">
             <details class="header__dropdown">
@@ -84,34 +84,35 @@
             </details>
           </li>
           <li class="header__nav-item">
-            <a href="pages/portfolio.html" class="header__nav-link button">Портфолио</a>
+            <a href="pages/portfolio.html" class="header__nav-link">Портфолио</a>
           </li>
           <li class="header__nav-item">
-            <a href="pages/awards.html" class="header__nav-link button">Наши успехи</a>
+            <a href="pages/awards.html" class="header__nav-link">Наши успехи</a>
           </li>
         </ul>
       </nav>
 
-      <button class="header__actions button">
-        <a href="pages/contacts.html" class="header__nav-link button">Контакты</a>
-      </button>
+      <div class="header__actions">
+        <a href="pages/contacts.html" class="header__nav-link">Контакты</a>
+      </div>
     </div>
 
   </header>
 
   <main class="main container">
-    <section class="hero">
-      <!-- <figure class="hero__image-wrapper">
+    <div class="grid-container main__inner">
+      <section class="hero">
+        <!-- <figure class="hero__image-wrapper">
         <img class="hero__text-image" src="#" loading="lazy" alt="" width="" height="">
       </figure> -->
 
+        <div class="hero__slogan">
+          <h1 class="hero__slogan-title title">ТриоДЕКОР - студия декора</h1>
+          <span class="hero__slogan-text">Создаём праздник под ключ</span>
+        </div>
+      </section>
 
-      <div class="hero__slogan">
-        <h1 class="hero__slogan-title title">ТриоДЕКОР - студия декора</h1>
-        <span class="hero__slogan-text">Создаём праздник под ключ</span>
-      </div>
-    </section>
-    <div class="grid-container">
+
       <section class="about">
         <div class="about__description">
           <h2 class="about__description-title title">Добро пожаловать в мир ярких эмоций вместе с ТриоДЕКОР</h2>
@@ -125,7 +126,7 @@
       </section>
 
       <article class="sidebar">
-        <h2 class=" sidebar__title title">Наши услуги</h2>
+        <h2 class="sidebar__title title">Наши услуги</h2>
         <ul class="sidebar__list">
           <li class="sidebar__item">
             <button class="sidebar__link button">готовые решения</button>

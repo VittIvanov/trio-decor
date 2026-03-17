@@ -1,11 +1,21 @@
+/* tokens */
+@import url('./tokens/variables.css');
+/* base */
 @import url('./base/reset.css');
-@import url('./base/variables.css');
 @import url('./base/base.css');
+/* layout */
+@import url('./layout/container.css');
+@import url('./layout/grid-layout.css');
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+/* components */
+@import url('./components/button.css');
+@import url('./components/sidebar.css');
+@import url('./components/form.css');
+/* pages */
 @import url('./pages/home.css');
 @import url('./pages/services.css');
 @import url('./pages/contacts.css');
 @import url('./pages/portfolio.css');
-@import url('./components/components.css');
-@import url('./layout/footer.css');
-@import url('./layout/header.css');
-@import url('./layout/grid-layout.css');
+/* utils */
+@import url('./utils/hidden.css');

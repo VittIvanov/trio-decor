@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Организация дней рождения и корпоративов: оформление, декор, подбор площадки и координация праздника. Создаем стильные дни рождения и уникальные события." />
-  <title>Организация дней рождения и корпоративов — декор и оформление | Trio Decor</title>
+    content="Организация дней рождения: оформление, декор, подбор площадки и координация праздника. Создаем стильные дни рождения и уникальные события." />
+  <title>Организация дней рождения — декор и оформление | Trio Decor</title>
   <link rel="icon" type="image/svg+xml" href="#" />
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="icon" type="image/x-icon" sizes="16x16" href="#">
@@ -14,61 +14,68 @@
 
 <body class="page ">
   <header class="header">
-    <a class="header__logo" href="../index.html">
-      <img class="header__logo-image" src="../img/Logo-dark.png" alt=" Логотип ТриоДЕКОР" width="140" height="70">
-    </a>
+    <div class="container header__inner">
+      <a class="header__logo" href="../index.html">
+        <img class="header__logo-image" src="../img/Logo-dark.png" alt=" Логотип ТриоДЕКОР" width="140" height="70">
+      </a>
 
 
-    <input type="checkbox" id="menu-toggle" class="header__toggle visually-hidden">
+      <input type="checkbox" id="menu-toggle" class="header__toggle visually-hidden">
 
-    <label for="menu-toggle" class="header__burger" aria-label="Открыть меню">
-      <span class="header__burger-line line--top"></span>
-      <span class="header__burger-line line--middle"></span>
-      <span class="header__burger-line line--bottom"></span>
-    </label>
+      <label for="menu-toggle" class="header__burger" aria-label="Открыть меню">
+        <span class="header__burger-line line--top"></span>
+        <span class="header__burger-line line--middle"></span>
+        <span class="header__burger-line line--bottom"></span>
+      </label>
 
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <a href="../index.html" class="header__nav-link">О нас</a>
-        </li>
-        <li class="header__nav-item header__nav-link--current">
-          <details class="header__dropdown">
-            <summary class="header__nav-link">
-              Услуги
-            </summary>
+      <nav class="header__nav">
 
-            <ul class="header__submenu">
-              <li class="header__submenu-item ">
-                <a href="wedding-page.html">Организация свадеб</a>
-              </li>
-              <li class="header__submenu-item header__submenu-item--current">
-                <a href="#">Организация дней рождения и корпоративов</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="holidays-events-page.html">Организация праздников и мероприятий</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="decor-store-page.html">Продажа и аренда декора</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="print-page.html">Широкоформатная печать на ткани</a>
-              </li>
-            </ul>
-          </details>
-        </li>
-        <li class="header__nav-item">
-          <a href="portfolio.html" class="header__nav-link">Портфолио</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="awards.html" class="header__nav-link">Наши успехи</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="contacts.html" class="header__nav-link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="../index.html" class="header__nav-link">О нас</a>
+          </li>
 
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">готовые решения </a>
+          </li>
+          <li class="header__nav-item header__nav-link--current">
+            <details class="header__dropdown">
+              <summary class="header__nav-link">
+                Услуги
+              </summary>
+
+              <ul class="header__submenu">
+                <li class="header__submenu-item ">
+                  <a class="header__nav-link" href="wedding-page.html">Организация свадеб</a>
+                </li>
+                <li class="header__submenu-item header__submenu-item--current">
+                  <a class="header__nav-link" href="#">Организация дней рождения</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a class="header__nav-link" href="holidays-events-page.html">Организация праздников и мероприятий</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a class="header__nav-link" href="decor-store-page.html">Продажа и аренда декора</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a class="header__nav-link" href="print-page.html">Широкоформатная печать на ткани</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="header__nav-item">
+            <a href="portfolio.html" class="header__nav-link">Портфолио</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="awards.html" class="header__nav-link">Наши успехи</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header__actions button">
+        <a href="contacts.html" class="header__nav-link">Контакты</a>
+      </button>
+    </div>
   </header>
 
   <main class="page--birthday">

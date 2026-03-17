@@ -3,11 +3,20 @@
 .main {
   display: flex;
   flex-direction: column;
-  min-height: 60vh;
+  min-height: 85vh;
   margin: 0 auto;
   background-color: var(--first_background-light-color);
   background-size: cover;
   color: var(--second-font-color);
+}
+
+.main__inner {
+  height: 100%;
+  background-color: var(--second_background-color);
+  background-image: url("../../img/boukette.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero {
@@ -15,12 +24,6 @@
   display: flex;
   align-items: flex-end;
   padding-inline: 10px;
-  background-color: var(--second_background-color);
-  background-image: url("../../img/boukette.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: contain;
 }
 
 .hero__slogan {
@@ -43,8 +46,7 @@
 
 
 .advantages {
-  display: block;
-  background-color: var(--second_background-color);
+  background-color: var(--first_background-color-opacity6);
   color: var(--second-font-color);
   padding-block: 10px;
 }
@@ -58,7 +60,7 @@
   max-height: 0;
   overflow: hidden;
 
-  transition: max-height var(--transiton-slow) cubic-bezier(.4, 0, .2, 1);
+  transition: max-height var(--transition-slow) cubic-bezier(.4, 0, .2, 1);
 }
 
 .advantages__item {

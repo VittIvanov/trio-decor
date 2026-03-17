@@ -1,7 +1,9 @@
 // появление списка advantages 
-const block = document.querySelector('.advantages');
-const button = document.querySelector('.advantages__title');
+const advantages = document.querySelector('.advantages');
+const advantagesTitle = document.querySelector('.advantages__title');
 
-button.addEventListener('click', () => {
-  block.classList.toggle('active');
-});
+if (advantages && advantagesTitle) {
+  advantagesTitle.addEventListener('click', () => {
+    advantages.classList.toggle('active');
+  });
+}

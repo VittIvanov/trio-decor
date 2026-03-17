@@ -1,0 +1,11 @@
+.button {
+  padding: 8px 10px;
+  font: inherit;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}

@@ -184,7 +184,7 @@
 }
 
 .gallery-slider__item {
-  flex: 0 0 85%;
+  flex: 0 0 80%;
   scroll-snap-align: center;
 
   border-radius: 12px;
@@ -193,9 +193,8 @@
 
 .gallery-slider__item img {
   width: 100%;
-  height: 380px;
+  height: 420px;
   object-fit: cover;
-  display: block;
 }
 
 .gallery-slider__list::-webkit-scrollbar {

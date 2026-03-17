@@ -40,7 +40,8 @@
 }
 
 .about {
-  background-color: var(--second_background-color);
+  margin: 0 10px;
+  background-color: var(--first_background-color-opacity3);
   color: var(--second-font-color)
 }
 

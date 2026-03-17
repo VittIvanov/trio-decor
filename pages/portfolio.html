@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" loading="lazy">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,76 +11,164 @@
   <link rel="icon" type="image/svg+xml" href="#" />
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="icon" type="image/x-icon" sizes="16x16" href="#">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
 
 <body class="page ">
   <header class="header">
-    <a class="header__logo" href="../index.html">
-      <img class="header__logo-image" src="../img/Logo-dark.png" alt=" Логотип ТриоДЕКОР" width="140" height="70">
-    </a>
 
-    <input type="checkbox" id="menu-toggle" class="header__toggle visually-hidden">
+    <div class="container header__inner">
+      <a class="header__logo" href="../index.html">
+        <img class="header__logo-image" src="../img/Logo-dark.png" alt=" Логотип ТриоДЕКОР" width="140" height="70"
+          loading="lazy">
+      </a>
 
-    <label for="menu-toggle" class="header__burger" aria-label="Открыть меню">
-      <span class="header__burger-line line--top"></span>
-      <span class="header__burger-line line--middle"></span>
-      <span class="header__burger-line line--bottom"></span>
-    </label>
+      <input type="checkbox" id="menu-toggle" class="header__toggle visually-hidden">
 
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <a href="../index.html" class="header__nav-link">О нас</a>
-        </li>
-        <li class="header__nav-item ">
-          <details class="header__dropdown">
-            <summary class="header__nav-link">
-              Услуги
-            </summary>
+      <label for="menu-toggle" class="header__burger" aria-label="Открыть меню">
+        <span class="header__burger-line line--top"></span>
+        <span class="header__burger-line line--middle"></span>
+        <span class="header__burger-line line--bottom"></span>
+      </label>
 
-            <ul class="header__submenu">
-              <li class="header__submenu-item ">
-                <a href="wedding-page.html">Организация свадеб</a>
-              </li>
-              <li class="header__submenu-item ">
-                <a href="birthday-corporate-page.html">Организация дней рождения и корпоративов</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="holidays-events-page.html">Организация праздников и мероприятий</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="decor-store-page.html">Продажа и аренда декора</a>
-              </li>
-              <li class="header__submenu-item">
-                <a href="print-page.html">Широкоформатная печать на ткани</a>
-              </li>
-            </ul>
-          </details>
-        </li>
-        <li class="header__nav-item header__nav-link--current">
-          <a href="#" class="header__nav-link">Портфолио</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="awards.html" class="header__nav-link">Наши успехи</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="contacts.html" class="header__nav-link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="../index.html" class="header__nav-link">О нас</a>
+          </li>
 
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">готовые решения </a>
+          </li>
+          <li class="header__nav-item ">
+            <details class="header__dropdown">
+              <summary class="header__nav-link">
+                Услуги
+              </summary>
+
+              <ul class="header__submenu">
+                <li class="header__submenu-item header__nav-item">
+                  <a class="header__nav-link" href="wedding-page.html">Оформление свадеб</a>
+                </li>
+                <li class="header__submenu-item header__nav-item">
+                  <a class="header__nav-link" href="birthday-corporate-page.html">Оформление дней рождения и
+                    корпоративов</a>
+                </li>
+                <li class="header__submenu-item header__nav-item">
+                  <a class="header__nav-link" href="holidays-events-page.html">Оформление праздников и мероприятий</a>
+                </li>
+
+                <li class="header__submenu-item ">
+                  <a class="header__nav-link" href="decor-store-page.html">Продажа и аренда декора</a>
+                </li>
+                <li class="header__submenu-item header__nav-item">
+                  <a class="header__nav-link" href="print-page.html">Широкоформатная печать на ткани</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="header__nav-item header__nav-link--current">
+            <a href="#" class="header__nav-link">Портфолио</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="awards.html" class="header__nav-link">Наши успехи</a>
+          </li>
+        </ul>
+      </nav>
+
+
+      <div class="header__actions">
+        <a href="pages/contacts.html" class="header__nav-link">Контакты</a>
+      </div>
+    </div>
   </header>
 
   <main class="main page--portfolio">
-    <section>
+    <div class="container">
       <h1>Наши работы</h1>
+      <section class="gallery">
+        <h2 class="gallery__title">Свадебные</h2>
 
-      <p> сделать галереи по разным типам работ</p>
-      <li>свадебные</li>
-      <li>дни рождения</li>
-      <li>выпускной</li>
-      <li>фотозоны</li>
-    </section>
+        <ul class="gallery__grid">
+
+          <li class="gallery__item">
+            <a href="../img/boukette.jpg" class="gallery__link glightbox-wedding">
+              <img src="../img/boukette.jpg" alt="Оформление свадьбы в ресторане" loading="lazy" width="300"
+                height="360">
+              <span class="gallery__caption">Оформление свадьбы в ресторане</span>
+            </a>
+          </li>
+
+          <li class="gallery__item">
+            <a href="../img/boukette.jpg" class="gallery__link glightbox-wedding">
+              <img src="../img/boukette.jpg" alt="Свадебный декор" loading="lazy">
+              <span class="gallery__caption">Свадебный декор</span>
+            </a>
+          </li>
+
+          <li class="gallery__item">
+            <a href="../img/boukette.jpg" class="gallery__link glightbox-wedding">
+              <img src="../img/boukette.jpg" alt="Свадебный декор" loading="lazy">
+              <span class="gallery__caption">Свадебный декор</span>
+            </a>
+          </li>
+
+          <li class="gallery__item">
+            <a href="../img/boukette.jpg" class="gallery__link glightbox-wedding">
+              <img src="../img/boukette.jpg" alt="Свадебный декор" loading="lazy">
+              <span class="gallery__caption">Свадебный декор</span>
+            </a>
+          </li>
+
+          <li class="gallery__item">
+            <a href="../img/boukette.jpg" class="gallery__link glightbox-wedding">
+              <img src="../img/boukette.jpg" alt="Свадебный декор" loading="lazy">
+              <span class="gallery__caption">Свадебный декор</span>
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="gallery-birthday__grid">
+        <h2 class="gallery-birthday__title">дни рождения</h2>
+
+        <ul class="gallery-birthday__list">
+
+          <li class="gallery-birthday__item">
+            <a href="../img/boukette.jpg" class="glightbox-birthday">
+              <img src="../img/boukette.jpg" alt="на дни рождения" loading="lazy">
+            </a>
+          </li>
+
+          <li class="gallery-birthday__item">
+            <a href="../img/boukette.jpg" class="glightbox-birthday">
+              <img src="../img/boukette.jpg" alt="на дни рождения" loading="lazy">
+            </a>
+          </li>
+
+          <li class="gallery-birthday__item">
+            <a href="../img/boukette.jpg" class="glightbox-birthday">
+              <img src="../img/boukette.jpg" alt="на дни рождения" loading="lazy">
+            </a>
+          </li>
+
+          <li class="gallery-birthday__item">
+            <a href="../img/boukette.jpg" class="glightbox-birthday">
+              <img src="../img/boukette.jpg" alt="на дни рождения" loading="lazy">
+            </a>
+          </li>
+
+        </ul>
+      </section>
+      <section class="main-gallery">
+        <h2>выпускной</h2>
+      </section>
+      <section class="main-gallery">
+        <h2>фотозоны</h2>
+      </section>
+
+    </div>
   </main>
 
   <footer class="footer">
@@ -156,6 +244,7 @@
   </footer>
 
   <script type="module" src="../js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 </body>
 
 </html>

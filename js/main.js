@@ -7,3 +7,12 @@ if (advantages && advantagesTitle) {
     advantages.classList.toggle('active');
   });
 }
+
+// галерея 
+GLightbox({
+  selector: '.glightbox-wedding'
+});
+
+GLightbox({
+  selector: '.glightbox-birthday'
+});

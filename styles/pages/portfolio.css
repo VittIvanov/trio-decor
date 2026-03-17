@@ -127,6 +127,31 @@
 
 @media (max-width: 768px) {
 
+  .gallery-birthday__list {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    padding-bottom: 10px;
+
+    scroll-snap-type: x mandatory;
+  }
+
+  .gallery-birthday__item {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .gallery-birthday__item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+  }
+
   .gallery__caption {
     opacity: 1;
     transform: none;

@@ -137,6 +137,14 @@
     scroll-snap-type: x mandatory;
   }
 
+  .gallery-birthday__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gallery-birthday__list {
+    scrollbar-width: none;
+  }
+
   .gallery-birthday__item {
     flex: 0 0 80%;
     scroll-snap-align: start;
@@ -155,6 +163,69 @@
   .gallery__caption {
     opacity: 1;
     transform: none;
+  }
+
+}
+
+/* вариант 3 */
+
+.gallery-slider {
+  margin-top: 80px;
+}
+
+.gallery-slider__list {
+  display: flex;
+  gap: 20px;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  padding-bottom: 10px;
+}
+
+.gallery-slider__item {
+  flex: 0 0 85%;
+  scroll-snap-align: center;
+
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery-slider__item img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-slider__list::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-slider__list {
+  scrollbar-width: none;
+}
+
+@media (min-width: 768px) {
+
+  .gallery-slider__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .gallery-slider__item {
+    flex: none;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .gallery-slider__list {
+    grid-template-columns: repeat(4, 1fr);
   }
 
 }

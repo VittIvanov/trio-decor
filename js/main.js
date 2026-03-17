@@ -16,3 +16,7 @@ GLightbox({
 GLightbox({
   selector: '.glightbox-birthday'
 });
+
+GLightbox({
+  selector: '.glightbox-holyday'
+});

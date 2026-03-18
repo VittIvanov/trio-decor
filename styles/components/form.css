@@ -1,19 +1,21 @@
 /* order-form */
 
 .order-form {
-  padding: 50px;
+  padding: 5%;
   border-radius: 28px;
+
   max-width: 700px;
+  margin: 40px auto;
   max-height: fit-content;
 
-  margin: 20px;
   background: linear-gradient(145deg,
       rgba(255, 255, 255, 0.08),
       rgba(255, 255, 255, 0.02));
 
   backdrop-filter: blur(25px);
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(201, 169, 110, 0.25);
+  ;
 
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.6),
@@ -21,75 +23,39 @@
 
   color: var(--platinum);
 
-  outline: 2px solid gold;
-  outline-offset: -2px;
 }
 
+
 .order-form__description-title {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  color: var(--platinum);
+  letter-spacing: 0.8px;
+
+  background: linear-gradient(90deg, #e7c58f, #b8965a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .order-form__description-text {
   position: relative;
-  color: rgba(229, 229, 229, 0.7);
-
-  /* скрываем текст */
-  clip-path: inset(0 100% 0 0);
-
-  transition: clip-path 0.3s;
+  display: inline-block;
+  /* чтобы ::after с курсором работал корректно */
+  min-height: 60px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  /* перенос строк по мере печати */
 }
 
-/* курсор */
 .order-form__description-text::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  width: 2px;
-  height: 100%;
-
-  background: var(--accent);
-  opacity: 0;
+  content: "|";
+  margin-left: 2px;
+  animation: blink 1s step-start infinite;
 }
 
-/* при hover */
 .order-form:hover .order-form__description-text {
-  animation: revealText 3s steps(60) forwards;
+  /* какие-то стили при hover */
 }
 
-.order-form:hover .order-form__description-text::after {
-  animation: cursorMove 3s steps(60) forwards,
-    blink 0.8s infinite;
-  opacity: 1;
-}
-
-/* анимация текста */
-@keyframes revealText {
-  from {
-    clip-path: inset(0 100% 0 0);
-  }
-
-  to {
-    clip-path: inset(0 0 0 0);
-  }
-}
-
-/* движение курсора */
-@keyframes cursorMove {
-  from {
-    right: 100%;
-  }
-
-  to {
-    right: 0;
-  }
-}
-
-/* мигание */
 @keyframes blink {
   50% {
     opacity: 0;
@@ -115,7 +81,7 @@
 
 .order-form__button {
   margin-top: 10px;
-  padding: 16px;
+  padding: 5%;
   border-radius: 12px;
   border: none;
 
@@ -138,17 +104,27 @@
   filter: brightness(1.05);
 }
 
+.order-form__button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
 .order-form__input {
-  padding: 16px 20px;
+  padding: 5%;
   border-radius: 12px;
 
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
 
+  backdrop-filter: blur(10px);
+
   color: var(--platinum);
   font-size: 16px;
-
   transition: all 0.3s ease;
+}
+
+.order-form__input:hover {
+  border-color: rgba(201, 169, 110, 0.4);
 }
 
 .order-form__input::placeholder {
@@ -166,6 +142,7 @@
 }
 
 .checkbox {
+  position: relative;
   display: flex;
   gap: 12px;
   cursor: pointer;
@@ -194,8 +171,8 @@
 .checkbox input:checked+.checkbox__text::before {
   content: "";
   position: absolute;
-  left: -30px;
-  top: 3px;
+  left: 4px;
+  top: 5px;
 
   width: 10px;
   height: 5px;
@@ -256,8 +233,11 @@
     margin: 0 auto;
     grid-template-rows: auto 1fr;
     gap: 20px;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 20px;
+    border-radius: 28px;
+
+    margin-bottom: 10px;
+    margin-right: 10px;
   }
 
   .order-form__form {
@@ -277,6 +257,6 @@
     max-width: 70%;
     margin: 0 auto;
     box-shadow: none;
-    border-radius: 4px;
+    border-radius: 20px;
   }
 }

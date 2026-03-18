@@ -27,10 +27,10 @@
 
 
 .order-form__description-title {
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
   background: linear-gradient(90deg, #e7c58f, #b8965a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -38,22 +38,16 @@
 
 .order-form__description-text {
   position: relative;
-  display: inline-block;
-  /* чтобы ::after с курсором работал корректно */
-  min-height: 60px;
+  font-size: 18px;
   line-height: 1.6;
-  white-space: pre-wrap;
-  /* перенос строк по мере печати */
-}
-
-.order-form__description-text::after {
-  content: "|";
-  margin-left: 2px;
-  animation: blink 1s step-start infinite;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 10px;
+  transition: color 0.3s ease;
 }
 
 .order-form:hover .order-form__description-text {
-  /* какие-то стили при hover */
+  color: #e7c58f;
+  /* мягкий акцент при hover */
 }
 
 @keyframes blink {

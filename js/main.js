@@ -10,47 +10,7 @@ if (advantages && advantagesTitle) {
 
 // галерея 
 GLightbox({
-  selector: '.glightbox-wedding'
+  selector: '.glightbox-wedding, .glightbox-holyday, .glightbox-birthday'
 });
 
-GLightbox({
-  selector: '.glightbox-birthday'
-});
 
-GLightbox({
-  selector: '.glightbox-holyday'
-});
-
-// печатающийся текст формы
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.querySelector('.order-form');
-  const textEl = document.querySelector('.order-form__description-text');
-
-  if (!form || !textEl) return;
-
-  const fullText = textEl.dataset.text || '';
-  let i = 0;
-  let isTyping = false;
-  const speed = 20;
-
-  form.addEventListener('mouseenter', () => {
-    if (isTyping) return;
-
-    isTyping = true;
-    textEl.textContent = '';
-    i = 0;
-
-    const interval = setInterval(() => {
-      textEl.textContent += fullText[i];
-      i++;
-      if (i >= fullText.length) {
-        clearInterval(interval);
-      }
-    }, speed);
-  });
-
-  form.addEventListener('mouseleave', () => {
-    isTyping = false;
-    // textEl.textContent = ''; // если нужно, чтобы очищался
-  });
-});

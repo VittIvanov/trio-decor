@@ -220,9 +220,25 @@
         </article>
 
         <form class="order-form__form" action="#" method="post">
+
           <input class="order-form__input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-          <button class="order-form__button button" type="submit" value="Связаться с нами">Оформить
-            мероприятие</button>
+
+          <div class="order-form__agree">
+            <label class="checkbox">
+              <input type="checkbox" required>
+              <span class="checkbox__text">
+                Я согласен с
+                <a href="/privacy.html" target="_blank">
+                  политикой обработки персональных данных
+                </a>
+              </span>
+            </label>
+          </div>
+
+          <button class="order-form__button button" type="submit">
+            Оформить мероприятие
+          </button>
+
         </form>
       </section>
     </div>

@@ -44,7 +44,6 @@
   line-height: 40px;
   font-weight: 700;
   padding: 20px;
-  color: var(--first-font-color);
   border: 2px solid var(--third_background-color);
   border-radius: 25% 10% 25% 10%;
   background-color: var(--first_background-color-opacity6);

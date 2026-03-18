@@ -201,11 +201,31 @@
 
   .info-block {
     display: block;
-    max-width: 550px;
-    height: max-content;
-    margin: 0 10px;
-    background-color: var(--first_background-color-opacity6);
-    color: var(--second-font-color);
-    padding: 10px;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px 25px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(201, 169, 110, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    color: var(--platinum);
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+
+    transition: all 0.3s ease;
+  }
+
+  .info-block:hover {
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 15px 40px rgba(201, 169, 110, 0.4);
+  }
+
+  .info-block-text {
+    margin: 0;
+    letter-spacing: 0.5px;
   }
 }

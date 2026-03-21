@@ -1,0 +1,181 @@
+.wedding {
+  background: linear-gradient(180deg,
+      #ffffff 0%,
+      #f8f8f8 50%,
+      #f3f3f3 100%);
+
+  color: #2c2c2c;
+}
+
+.wedding__hero {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.wedding__hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+  background: linear-gradient(90deg, #f07e02, #caa35f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wedding__hero-text {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: rgba(44, 44, 44, 0.7);
+}
+
+.wedding__hero-button {
+  padding: 14px 28px;
+  border-radius: 30px;
+  max-width: fit-content;
+  margin: auto;
+
+  background: linear-gradient(135deg, #f07e02, #ffb347);
+  color: white;
+
+  box-shadow: 0 10px 30px rgba(240, 126, 2, 0.3);
+
+  transition: 0.3s;
+}
+
+.wedding__hero-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(240, 126, 2, 0.4);
+}
+
+.wedding__about {
+
+  display: grid;
+  gap: 16px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.wedding__about h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wedding__about ul {
+  display: grid;
+  gap: 16px;
+}
+
+.wedding__about li {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 16px;
+  border-radius: 14px;
+
+  transition: 0.3s;
+}
+
+.wedding__about li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(240, 126, 2, 0.15);
+}
+
+.wedding__portfolio-grid {
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.wedding__portfolio-grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  transition: 0.4s;
+}
+
+.wedding__portfolio-grid figure {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.wedding__portfolio-grid img:hover {
+  transform: scale(1.05);
+}
+
+.wedding__info-block {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+
+  border-radius: 24px;
+
+  background: linear-gradient(145deg,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.6));
+
+  border: 1px solid rgba(240, 126, 2, 0.2);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+}
+
+.wedding__info-block:hover {
+  box-shadow: 0 10px 20px rgba(240, 126, 2, 0.15);
+}
+
+.wedding__info-block-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(44, 44, 44, 0.8);
+}
+
+.wedding__advantages-list {
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.wedding__advantages-item {
+  padding: 20px;
+  border-radius: 20px;
+
+  background: white;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  transition: 0.3s;
+}
+
+.wedding__advantages-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(240, 126, 2, 0.2);
+}
+
+.wedding__portfolio,
+.wedding__steps,
+.wedding__advantages {
+  margin: 60px auto;
+}
+
+.wedding__steps-list {
+  display: grid;
+  gap: 20px;
+}
+
+.wedding__steps-item {
+  padding: 20px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}

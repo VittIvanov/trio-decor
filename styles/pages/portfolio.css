@@ -29,7 +29,7 @@
 
 /* вариант 1 */
 
-.page--portfolio {
+.portfolio {
   display: grid;
   grid-template-columns: auto;
   min-height: 70vh;

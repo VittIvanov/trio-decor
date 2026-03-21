@@ -1,8 +1,8 @@
 .wedding {
   background: linear-gradient(180deg,
-      #ffffff 0%,
-      #f8f8f8 50%,
-      #f3f3f3 100%);
+      #dedcdc 0%,
+      #cec8c8 50%,
+      #bcbbbb 100%);
 
   color: #2c2c2c;
 }
@@ -184,7 +184,7 @@
   margin: 0;
   padding: 80px 20px;
 
-  background: linear-gradient(135deg, #edcaa5, #c39d68);
+  background: linear-gradient(135deg, #b8b4af, #978a78);
 
   text-align: center;
 }
